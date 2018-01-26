@@ -35,10 +35,6 @@ public class TiledProcessor : Tiled2Unity.ICustomTiledImporter
             {
                 Debug.LogErrorFormat("CustomBehaviour {0} not defined", behaviour);
             }
-            // Add the terrain tile game object
-            // StrategyTile tile = gameObject.AddComponent<StrategyTile>();
-            // tile.TileType = customProperties["Terrain"];
-            // tile.TileNote = customProperties["Note"];
         }
     }
 
