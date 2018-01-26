@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.1" orientation="isometric" renderorder="right-down" width="25" height="25" tilewidth="64" tileheight="32" infinite="0" nextobjectid="13">
+ <tileset firstgid="1" name="template_tileset" tilewidth="64" tileheight="64" tilecount="32" columns="4">
+  <tileoffset x="0" y="16"/>
+  <image source="template_tileset.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="33" name="template_walls" tilewidth="64" tileheight="160" tilecount="12" columns="4">
+  <tileoffset x="0" y="16"/>
+  <image source="template_walls.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="45" name="object_tileset" tilewidth="64" tileheight="128" tilecount="16" columns="4">
+  <image source="object_tileset.png" width="256" height="512"/>
+ </tileset>
+ <tileset firstgid="61" name="decals" tilewidth="64" tileheight="64" tilecount="24" columns="4">
+  <tileoffset x="0" y="16"/>
+  <image source="decals.png" width="256" height="384"/>
+ </tileset>
+ <layer name="Main World" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJxTZmBgUKYSVsSBQXKMZGBi9SHbgWwvNj417KCHPyi1A5c51AwrYuyghz9Gw2rUDmrbQQxGN48e/iDkr+FqB7UwLjsUqeQPXHjUjpFrB60xAPgsGCY=
+  </data>
+ </layer>
+ <layer name="Overlay World" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJxjYBj8wJ7O9jkMU7tGASpwGGgHjIJBAewG2gF0BA4kio8C2oLBmvao4a7B6rfhBgCOKAJ4
+  </data>
+ </layer>
+ <objectgroup name="Actors" offsetx="90.6667" offsety="66.6667">
+  <object id="1" name="PlayerStart" gid="45" x="203.333" y="295.333" width="64" height="128"/>
+ </objectgroup>
+</map>
