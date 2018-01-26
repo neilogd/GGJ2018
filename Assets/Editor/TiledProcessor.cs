@@ -7,7 +7,6 @@ public class TiledProcessor : Tiled2Unity.ICustomTiledImporter
 
     public void HandleCustomProperties(GameObject gameObject, IDictionary<string, string> customProperties)
     {
-        System.Console.WriteLine(customProperties.Keys);
         if (customProperties.ContainsKey("Terrain"))
         {
             // Add the terrain tile game object
