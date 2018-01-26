@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" tiledversion="1.1.1" orientation="staggered" renderorder="right-down" width="64" height="128" tilewidth="256" tileheight="128" infinite="0" staggeraxis="y" staggerindex="odd" nextobjectid="15">
+<map version="1.0" tiledversion="1.1.1" orientation="staggered" renderorder="right-down" width="64" height="128" tilewidth="256" tileheight="128" infinite="0" staggeraxis="y" staggerindex="odd" nextobjectid="24">
  <tileset firstgid="1" name="template_tileset" tilewidth="256" tileheight="256" tilecount="32" columns="4">
   <tileoffset x="0" y="64"/>
   <grid orientation="isometric" width="256" height="256"/>
@@ -29,6 +29,17 @@
   </data>
  </layer>
  <objectgroup name="Actors">
-  <object id="13" name="PlayerStart" type="PlayerStart" gid="69" x="7696" y="2968" width="256" height="512"/>
+  <object id="13" name="PlayerStart" type="PlayerStart" gid="69" x="7696" y="2968" width="256" height="512">
+   <properties>
+    <property name="WearingHat" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="19" name="NotThePlayer" type="NonPlayerCharacter" gid="69" x="8330.45" y="2989.45" width="256" height="512">
+   <properties>
+    <property name="AnotherProperty" value="Test"/>
+    <property name="Behaviour" value="Spinning"/>
+    <property name="RotationSpeed" type="float" value="5000"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

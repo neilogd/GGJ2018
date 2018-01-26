@@ -7,9 +7,14 @@ public class TiledProcessor : Tiled2Unity.ICustomTiledImporter
 
     public void HandleCustomProperties(GameObject gameObject, IDictionary<string, string> customProperties)
     {
-        System.Console.WriteLine(customProperties.Keys);
-        if (customProperties.ContainsKey("Terrain"))
+        if (customProperties.ContainsKey("Behaviour"))
         {
+            Debug.Log(customProperties.Count);
+            if (customProperties["Behaviour"] == "Spinning")
+            {
+                CustomBehaviour customBehaviour = gameObject.AddComponent<Spinning>();
+                customBehaviour.Import(customProperties);
+            }
             // Add the terrain tile game object
             // StrategyTile tile = gameObject.AddComponent<StrategyTile>();
             // tile.TileType = customProperties["Terrain"];
