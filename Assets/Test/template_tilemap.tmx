@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.1" orientation="staggered" renderorder="right-down" width="64" height="128" tilewidth="256" tileheight="128" infinite="0" staggeraxis="y" staggerindex="odd" nextobjectid="15">
+ <tileset firstgid="1" name="template_tileset" tilewidth="256" tileheight="256" tilecount="32" columns="4">
+  <tileoffset x="0" y="64"/>
+  <grid orientation="isometric" width="256" height="256"/>
+  <image source="template_tileset.png" width="1024" height="2048"/>
+ </tileset>
+ <tileset firstgid="33" name="template_walls" tilewidth="256" tileheight="640" tilecount="12" columns="4">
+  <tileoffset x="0" y="64"/>
+  <grid orientation="isometric" width="256" height="640"/>
+  <image source="template_walls.png" width="1024" height="2048"/>
+ </tileset>
+ <tileset firstgid="45" name="decals" tilewidth="256" tileheight="256" tilecount="24" columns="4">
+  <tileoffset x="0" y="64"/>
+  <grid orientation="isometric" width="256" height="256"/>
+  <image source="decals.png" width="1024" height="1536"/>
+ </tileset>
+ <tileset firstgid="69" name="object_tileset" tilewidth="256" tileheight="512" tilecount="16" columns="4">
+  <image source="object_tileset.png" width="1024" height="2048"/>
+ </tileset>
+ <layer name="Main World" width="64" height="128">
+  <data encoding="base64" compression="zlib">
+   eJzt2UuugzAUg2G6FMT+93hHV6oQKSScJMf5PbDaQUX8Wajq47Nt28dxHMdxHMdxHMdxHMdxnLAcCTrM9lM3OE6PtByF54ScvXQ/aYOSk+4nbHDno/tX3uCpi+5fcYNaD92/0gatDrp/hQ3e9qf7lTeI6k33K26w24+9B/av55HvAXvQtUb6ozY4CtfOlqt+kZ8BFP1ve5/3y7rBr16tna/uHUV/ydLiz7jBkz6RvwEo+ms3uHttlg1qekT+Bqjoj7bN3qDl/Mj7WtF/t0Ht++SsDd6cG/kfoKK/ZG39rDx6g4jzIr/PKvpVN4g8h+7/3yBqh94b9Li+0j3Q+/qZOyrY7e/TVcluf2xnRbv9Md3JdrqfbKf7yXa6n2yn+8l2+3X9kb0VNyD7e/RV2oDs79lTYQOyf0S/zBuQ/SN7ZdyA7J/RJ9MGZP/MHhk2IPtnnz+7A9mfwT6zC9mfyT6jE9mf0T6yG9mf2T6iI9mvYO/ZlexXsvfoTPYr2iO7k/3K9ggD2b+C/Y2F7F/J3mIi+1e019jI/pXtT4xkP8H+y0r2k+xXZrKfaP/egO6f3cFxHOcqf9u6PxM=
+  </data>
+ </layer>
+ <layer name="Overlay World" width="64" height="128">
+  <data encoding="base64" compression="zlib">
+   eJzt2EEKACAIBEA/FP3/d527BRWizLxgD4KuEQAAAAAAAAAAALuZHQCAEuwLAICIkR3gE7ceAAAAHZz29q79njvmAgAAAIBK/LMAAAAAAAAAAADgrQXfvgFv
+  </data>
+ </layer>
+ <objectgroup name="Actors">
+  <object id="13" name="PlayerStart" type="PlayerStart" gid="69" x="7696" y="2968" width="256" height="512"/>
+ </objectgroup>
+</map>
