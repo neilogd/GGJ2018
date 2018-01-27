@@ -34,7 +34,6 @@ public class CustomBehaviour : MonoBehaviour {
             {
                 try
                 {
-                    Debug.Log(float.Parse(kvp.Value));
                     field.SetValue(this, float.Parse(kvp.Value));
                 }
                 catch
